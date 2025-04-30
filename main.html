@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <title>LIFELINE SHIELD - Healthcare Assistance Platform</title>
+</head>
+<body>
+  <header id="navbar" class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <div class="navbar-logo">
+          <span class="logo-icon">🩺</span>
+          <a href="#hero">LIFELINE SHIELD</a>
+        </div>
+        <div class="navbar-menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="navbar-links">
+          <ul>
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#therapy" class="nav-link">Therapy</a></li>
+            <li><a href="#chatbot" class="nav-link">Chatbot</a></li>
+            <li><a href="#memory game" class="nav-link">Memory Game</a></li>
+            <li><a href="#carousel" class="nav-link">Carousel</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Bringing Healthcare Within Reach</h1>
+        <p>Connecting those in need with affordable medical care solutions</p>
+        <button class="btn-primary">Explore the Shield</button>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🏥</div>
+            <h3>Virtual Doctor</h3>
+            <p>Connect with medical professionals remotely for consultations, diagnoses, and treatment plans.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🧠</div>
+            <h3>Mental Health</h3>
+            <p>Access therapy sessions, support groups, and mental wellness resources at affordable rates.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💊</div>
+            <h3>Medication Assistance</h3>
+            <p>Find discounted medications and financial assistance programs for prescriptions you need.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🍎</div>
+            <h3>Nutrition Guidance</h3>
+            <p>Receive personalized diet plans and nutritional advice to support your health journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="therapy" class="therapy-section">
+      <div class="container">
+        <h2 class="section-title">Virtual Therapy Session</h2>
+        <div class="therapy-monitor">
+          <div class="monitor-screen">
+            <button id="playButton" class="play-button">▶</button>
+          </div>
+          <div class="monitor-controls">
+            <button class="control-button join"><span class="button-icon">🎥</span> Join</button>
+            <button class="control-button mute"><span class="button-icon">🔇</span> Mute</button>
+            <button class="control-button camera"><span class="button-icon">📷</span> Camera</button>
+            <button class="control-button schedule"><span class="button-icon">📅</span> Schedule</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chatbot" class="chatbot-section">
+      <div class="container">
+        <h2 class="section-title">Talk to Our Healthcare Assistant</h2>
+        <p class="section-subtitle">Get instant answers to your healthcare questions with our AI-powered chatbot.</p>
+        <button id="chatBotButton" class="btn-primary chatbot-button">Chat with our Chatbot</button>
+      </div>
+    </section>
+
+    <section id="memory-game" class="memory-game-section">
+      <div class="container">
+        <h2 class="section-title">Memory Game</h2>
+        <p class="section-subtitle">Find all matching pairs to complete the challenge!</p>
+        <div class="memory-game-container">
+          <div class="memory-game-grid" id="memoryGameGrid"></div>
+          <button id="resetGameBtn" class="btn-secondary">Reset Game</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="carousel" class="carousel-section">
+      <div class="container">
+        <h2 class="section-title">Success Stories</h2>
+        <div class="carousel-container">
+          <div class="carousel-slides" id="carouselSlides">
+            <div class="carousel-slide active">
+              <img src="https://images.pexels.com/photos/7551605/pexels-photo-7551605.jpeg" alt="Doctor helping patient">
+              <div class="carousel-caption">
+                <h3>Quality Care for All</h3>
+                <p>Our network of dedicated healthcare professionals provides personalized care to everyone in need.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.pexels.com/photos/3993239/pexels-photo-3993239.jpeg" alt="Online medical consultation">
+              <div class="carousel-caption">
+                <h3>Virtual Consultations</h3>
+                <p>Access medical expertise from the comfort of your home through our secure telehealth platform.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.pexels.com/photos/7659565/pexels-photo-7659565.jpeg" alt="Community support group">
+              <div class="carousel-caption">
+                <h3>Community Support</h3>
+                <p>Join our supportive community of patients, caregivers, and medical professionals.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control prev" id="prevSlide">←</button>
+          <button class="carousel-control next" id="nextSlide">→</button>
+          <div class="carousel-dots" id="carouselDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Have questions about our services? Need help finding affordable healthcare options? Our team is here to help.</p>
+            <ul>
+              <li>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1e2eeeff5e0e2f5c1ede8e7e4ede8efe4f2e9e8e4ede5afeef3e6">[email&#160;protected]</a></li>
+              <li>📞 (555) 123-4567</li>
+              <li>📍 1234 Healthcare Ave, Medical District, CA 90210</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>LIFELINE SHIELD</h3>
+          <p>Bringing healthcare within reach</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#therapy">Therapy</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
+            <li><a href="#memory-game">Memory Game</a></li>
+            <li><a href="#carousel">Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect With Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon">GitHub</a>
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 LIFELINE SHIELD. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="therapyModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Coming Soon</h3>
+      <p>Our virtual therapy sessions will be available shortly. Please check back later!</p>
+      <button class="btn-primary">Notify Me</button>
+    </div>
+  </div>
+
+  <div id="congratsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Congratulations!</h3>
+      <p>You've successfully completed the memory game!</p>
+      <div id="fireworks-container"></div>
+      <button class="btn-primary" id="playAgainBtn">Play Again</button>
+    </div>
+  </div>
+
+  <canvas id="fireworksCanvas"></canvas>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
